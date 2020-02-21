@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "debug-ide": "./bin/debug-ide",
-    "test": "mocha -R mocha-multi --reporter-options nyan=-,json=.results.json"
+    "start": "node index.js",
+    "test": "mocha --timeout 5000 -R mocha-multi --reporter-options nyan=-,json=.results.json"
   },
   "repository": {
     "type": "git",
@@ -37,5 +38,8 @@
     "node-fetch": "^2.3.0",
     "sinon": "^7.2.3",
     "sinon-stub-promise": "^4.0.0"
+  },
+  "dependencies": {
+    "npm-start-command": "^1.0.0"
   }
 }
